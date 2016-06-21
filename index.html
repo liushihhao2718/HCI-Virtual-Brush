@@ -764,7 +764,7 @@ pre {
 <p>首先建立筆刷圓錐，R為筆刷半徑，建議值為<code>0.9cm</code>，L為筆刷長度，建議值為<code>3cm</code>，模擬平均毛筆的大小。文中提到根據經驗，以500到1000根刷毛可以得出良好的結果。
 每根刷毛的位置隨機散布在半徑R的圓中，長度為 `l_{i} = Lq_{i}` ，`q_{i}`為0到1的亂數，使得毛筆的尖端有高底起伏</p>
 
-<p><img src="1.png" style="max-width:100%;"/></p>
+<p><img src="source/1.png" style="max-width:100%;"/></p>
 
 <h4>
 <a id="user-content-brush-motion-dynamic-model" class="anchor" href="#brush-motion-dynamic-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Brush motion dynamic model</h4>
@@ -773,7 +773,7 @@ pre {
 
 <p>另外有`Ｕ_{t}=(u_{t}, v_{t}, w_{t})`描述橢圓長短軸在<em>t</em>時間的變形，<code>u,v</code>為長短軸，<code>w</code>為根據軌跡的旋轉量</p>
 
-<p><img src="2.png" style="max-width:100%;"/></p>
+<p><img src="source/2.png" style="max-width:100%;"/></p>
 
 <p>每一根刷毛根部的位置，經由下方公式投影到畫布上：</p>
 
@@ -808,5 +808,11 @@ E(e_t,r_i)=\begin{cases}ON & if \quad d_{t,i} > e_t(R-r_i)/R-b_t/R \\ OFF & othe
 <p>程式將從檔案中讀取以上所提參數 `z,k,\rho,b,e,g`，將使用者給予的滑鼠點序列轉為cubic spline，由遞迴方式在畫布上畫點，直到達到位置x,y差值小於1的限制</p>
 
 <h2>
-<a id="user-content-ddemo影片" class="anchor" href="#ddemo%E5%BD%B1%E7%89%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d.Demo影片</h2>
+<a id="user-content-ddemo影片" class="anchor" href="#ddemo%E5%BD%B1%E7%89%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d.Demo影片
+</h2>
+
+<video style="max-width:100%;" controls>
+  <source src="source/hci.mp4" type="video/mp4"/>
+Your browser does not support the video tag.
+</video>
 </article></body></html>
